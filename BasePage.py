@@ -8,8 +8,9 @@ class BasePage:
     """A class that represents web-driver actions
         initializing webdriver instance
         maximizing browser window
+    """
 
-    Methods:
+    """Methods:
         click_element(self, selector, find_by)
             selector - selector name
             find_byt - selector type(default is By.NAME)

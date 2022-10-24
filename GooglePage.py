@@ -3,20 +3,20 @@ from BasePage import BasePage
 
 
 class GooglePage(BasePage):
-    """A class for Google page search
+    """A class for Google page search"""
 
-        Methods:
-            go_to_url(self)
-                opens 'http://google.com'
+    """Methods:
+        go_to_url(self)
+            opens 'http://google.com'
 
-            accept_cookies_button(self)
-                clicks on accept cookies
+        accept_cookies_button(self)
+            clicks on accept cookies
 
-            type_in_search_box(self, text)
-                text - search keyword
+        type_in_search_box(self, text)
+            text - search keyword
 
-            click_search_button(self)
-                click Google search button
+        click_search_button(self)
+            click Google search button
 
             click_url(self, text)
                 text - page you want to open
