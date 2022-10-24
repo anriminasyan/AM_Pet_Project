@@ -5,6 +5,25 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
+    """A class that represents web-driver actions
+        initializing webdriver instance
+        maximizing browser window
+
+    Methods:
+        click_element(self, selector, find_by)
+            selector - selector name
+            find_byt - selector type(default is By.NAME)
+
+        typing_text(self, selector, text, find_by)
+            selector - selector name
+            text - accepts text as argument
+            find_byt - selector type(default is By.NAME)
+
+        get_text(self, selector, find_by)
+            selector - selector name
+            find_byt - selector type(default is By.NAME)
+            returns InnerText of element
+    """
     def __init__(self):
         self.driver = webdriver.Chrome(executable_path=r"/usr/local/bin/chromedriver")
         self.driver.maximize_window()
